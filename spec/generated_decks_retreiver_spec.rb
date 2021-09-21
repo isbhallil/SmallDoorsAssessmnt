@@ -1,4 +1,4 @@
-require "generated_decks_retreiver_spec"
+require "generated_decks_retreiver"
 
 describe GeneratedDecksRetreiver do
   it "should return previously generated decks" do
