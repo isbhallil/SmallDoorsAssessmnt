@@ -2,6 +2,9 @@ require "application_service"
 
 class GeneratedDecksRetreiver < ApplicationService
   def call
-    p "[GeneratedDecksRetreiver] Hello World !"
+    file = File.open("previous_deck.json")
+    previous_deck = JSON.parse(file.read)
+
+    previous_deck
   end
 end
